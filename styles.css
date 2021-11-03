@@ -1,0 +1,598 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.753);
+    background-color: rgba(54, 3, 3, 0.64);
+    min-width: 315px;
+}
+
+/* scroll snapping attempt */
+html, body {
+    scroll-snap-type: y proximity;
+}
+
+.scroll-home {
+    scroll-snap-align: start;
+  
+}
+
+.scroll-cart {
+    scroll-snap-align: start;
+
+}
+
+
+a {
+    color: rgba(255, 255, 255, 0.753);
+    font-weight: 500;
+}
+
+
+a:hover {
+    color: rgba(255, 255, 255, 1);
+
+}
+
+a:visited {
+    color: rgba(255, 255, 255, 0.500);
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.753);
+
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.shopping-cart {
+    font-size: 1.6rem;
+}
+
+.shopping-cart:hover {
+    color: rgb(250, 4, 4);
+}
+
+.your-cart {
+    align-self: center;
+}
+
+/* image sizing */
+.lucky-logo {
+    height: 60px;
+}
+
+/* image sizing */
+.cart-icon {
+    height: 25px;
+}
+
+.your-cart {
+    float: left;
+    margin-right: 15px;
+}
+
+
+.header-background {
+
+
+    position: static;
+    display: block;
+    overflow: visible;
+    top: 0;
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 70px;
+    background-image: -webkit-gradient(linear, left top, left bottom from(rgba(53, 11, 11, 0.9)));
+    background-image: linear-gradient(180deg, rgba(53, 8, 8, 0.92), rgba(53, 8, 8, 0.64)), url(images/bg.png);
+    flex-direction: column;
+    background-position: 0px 0px, 100% 50%;
+    background-size: auto, cover;
+    white-space: normal;
+    object-fit: fill;
+    -o-object-fit: fill;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.dropdown-menu {
+    background-color: rgb(58, 2, 2);
+}
+
+.dropdown-item {
+    color: rgba(255, 255, 255, 0.753);
+
+}
+
+.dropdown-item:hover {
+    background-color: rgba(235, 114, 114, 0.438);
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.dropdown-item:visited {
+    color: rgba(255, 255, 255, 0.753);
+
+}
+
+.dropdown-divider {
+    color: rgb(252, 204, 204);
+}
+
+
+
+.sticky-nav {
+
+
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    padding: 14px;
+    z-index: 1;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    -ms-grid-row-align: auto;
+    align-self: auto;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    background-color: rgba(53, 11, 11, 0.6);
+}
+
+.navbar .navbar-brand a {
+    padding: 1rem 0;
+    display: block;
+    text-decoration:none;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: rgb(250, 4, 4);
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+}
+
+.navbar-toggler span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+    background: white;
+}
+
+.navbar-toggler span + span {
+    margin-top: 4px;
+    width: 22px;
+}
+
+.navbar-toggler span + span + span {
+    width: 22px;
+}
+
+
+
+.heading {
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+    color: rgb(245, 128, 128);
+    margin-top: 180px;
+    margin-bottom: 8px;
+    min-height: 100px;
+
+}
+
+.paragraph {
+    margin-top: 15px;
+    padding: 1rem 5rem 1rem 5rem;
+    font-size: 1.1rem;
+    color: rgba(248, 229, 229, 0.863);
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.home-paragraph {
+    text-align: center;
+}
+
+/* \/ Our Story Section \/ */
+
+
+
+.story-column-left {
+    min-height: 100vh;
+    background-image: -webkit-gradient(linear, left top, left bottom from(rgba(75, 4, 4, 0.9)));
+    background-image: linear-gradient(180deg, rgba(39, 2, 2, 0.92), rgba(43, 3, 3, 0.64)), url(images/story.png);
+    background-position: 0px 0px, 100% 50%;
+    background-size: auto, cover;
+    background-attachment: scroll, scroll;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+.story-column-right {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.story-column-right .section-title {
+    margin-top: 80px;
+    padding: 5rem 2rem 0rem 5rem;
+    font-size: 2.8rem;
+    color: antiquewhite;
+    font-weight: 500;
+    
+}
+
+
+.story-asterisk {
+    
+    color: rgba(250, 235, 215, 0.199);
+}
+/* /\ Our Story Section /\ */
+
+/* \/ Commitment To Quality Section \/ */
+
+.quality-column-left {
+    background-color: rgba(54, 3, 3, 0.64);
+    min-height: 100vh;
+}
+
+
+.quality-column-left .section-title {
+    margin-top: 20px;
+    padding: 5rem 5rem 0rem 5rem;
+    font-size: 2.8rem;
+    color: antiquewhite;
+    font-weight: 500;
+    text-align: end;
+}
+
+.quality-column-right {
+    min-height: 100vh;
+    background-image: -webkit-gradient(linear, left top, left bottom from(rgba(75, 4, 4, 0.9)));
+    background-image: linear-gradient(180deg, rgba(39, 2, 2, 0.92), rgba(43, 3, 3, 0.64)), url(images/quality.png);
+    background-position: 0px 0px, 100% 50%;
+    background-size: auto, cover;
+    background-attachment: scroll, scroll;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+/* /\ Commitment to quality section /\ */
+
+/* \/ History of luck crickets section \/ */
+
+.history-column-right {
+    min-height: 100vh;
+}
+
+.history-column-right .history-title {
+    margin-top: 30px;
+    padding: 2rem 2rem 0rem 5rem;
+    font-size: 2.8rem;
+    color: antiquewhite;
+    font-weight: 500;
+}
+
+.history-header {
+    text-align: center;
+}
+
+.history-column-left {
+    min-height: 100vh;
+    background-image: -webkit-gradient(linear, left top, left bottom from(rgba(75, 4, 4, 0.9)));
+    background-image: linear-gradient(180deg, rgba(39, 2, 2, 0.92), rgba(43, 3, 3, 0.64)), url(images/history.png);
+    background-position: 0px 0px, 100% 50%;
+    background-size: auto, cover;
+    background-attachment: scroll, scroll;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+/* /\ history of luck crickets section /\ */
+
+/* \/ add to cart section \/ */
+
+.product-column {
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.cart-main-title {
+    font-size: 2rem;
+    color: rgba(88, 7, 7, 0.918);
+    background-color: rgb(194, 133, 133);
+}
+
+
+.cart-items {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.item-input {
+    width: 55px;
+    height: 1.5rem;
+
+    
+}
+
+
+
+
+.item-desc, .checkout-btn, .cart-title {
+    margin: 0.5rem 1rem 2rem 1rem;
+}
+
+.item-input {
+    margin-left: 1.3rem;
+}
+
+.item-title {
+    font-size: 1.9rem;
+}
+
+.product-column-left {
+    border-right: solid rgba(141, 4, 4, 0.582) 2px;
+    background-color: rgba(37, 10, 10, 0.733);
+}
+
+.product-column-right {
+    border-left: solid rgba(141, 4, 4, 0.582) 2px;
+    background-color: rgba(126, 2, 2, 0.64);
+}
+
+.product-image {
+   width: 10vw;
+   
+}
+
+.product-title {
+    margin-top: 20px;
+}
+
+.btn-add-to-cart {
+    margin-top: 20%;
+    margin-bottom: 40px;
+}
+
+.cart-checkout-top  {
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 20vh;
+    border-top: solid rgba(141, 4, 4, 0.582) 2px;
+}
+
+.cart-checkout-bottom {
+height: 80vh;
+background-image: -webkit-gradient(linear, left top, left bottom from(rgba(75, 4, 4, 0.9)));
+background-image: linear-gradient(180deg, rgba(39, 2, 2, 0.92), rgba(43, 3, 3, 0.64)), url(images/checkout.png);
+background-position: 0px 0px, 0px 100%;
+background-size: auto, cover;
+background-attachment: scroll, scroll;
+object-fit: cover;
+-o-object-fit: cover;
+}
+
+/* /\ add to cart section /\ */
+
+/* \/ contact us \/ */
+
+
+.contact-right {
+    min-height: 100vh;
+    background-image: -webkit-gradient(linear, left top, left bottom from(rgba(75, 4, 4, 0.9)));
+    background-image: linear-gradient(180deg, rgba(39, 2, 2, 0.92), rgba(43, 3, 3, 0.64)), url(images/contact.png);
+    background-position: 0px 0px, 100% 50%;
+    background-size: auto, cover;
+    background-attachment: scroll, scroll;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+.contact-section {
+    margin-top: 30px;
+    padding: 2rem 2rem 0rem 5rem;
+    font-size: 2.8rem;
+    color: antiquewhite;
+    font-weight: 500;
+}
+
+.contact-left {
+    background-color: rgba(54, 3, 3, 0.64);
+    min-height: 100vh;
+}
+
+.contact-left .paragraph {
+    padding: 2rem 2rem 0rem 5rem;
+    font-size: 1rem;
+    line-height: 1.2;
+
+}
+
+
+strong {
+    font-weight: 700;
+}
+
+.phone-mail-link {
+    font-weight: bold;
+}
+
+.phone-mail-link:hover {
+    color: crimson;
+    font-weight: bold;
+}
+
+#contact-form {
+    margin-top: 40px;
+    padding: 2rem 2rem 0rem 5rem;
+}
+
+#contact-form .form-control {
+    background: #300f0f;
+    border: none;
+    border-radius: .3rem;
+    box-shadow: none;
+    font-weight: 300;
+    outline: medium none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    height: auto;
+    width: 100%;
+    color: white;
+    transition: all .2s ease-in-out;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+
+#contact-form .form-control:hover, #contact-form .form-control:focus {
+    box-shadow: none;
+    background: #3a0404;
+}
+
+#contact-form textarea.form-control {
+    min-height: 8rem;
+}
+
+#contact-form span.sub-text {
+    color: wheat;
+    position: absolute;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.send-message {
+    margin-top: 1rem;
+    color: rgba(54, 3, 3, 0.64);
+}
+
+.send-message:hover {
+    color: rgba(221, 21, 21, 0.932);
+}
+
+
+/* /\ contact us /\ */
+
+/* \/ Return to top button \/ */
+
+.to-top .fa {
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 40px;
+    background-color: rgba(161, 1, 1, 0.678);
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 20%;
+    line-height: 15px;
+    
+}
+
+.to-top:hover {
+
+    background-color: rgb(161, 1, 1);
+
+    
+}
+
+
+/* /\  return to top button /\*/
+
+
+
+
+
+
+/* Borders for testing */
+/* .header-background {
+    border: solid blue 2px;
+}
+
+.sticky-nav {
+        border: solid blueviolet 2px;
+}
+
+.navbar-brand {
+    border: solid white 2px;
+}
+
+.navbar {
+    border: solid goldenrod 2px;
+}
+
+.navbar-nav {
+    border: solid pink 2px;
+
+}
+
+.story-column-left {
+    border: solid rgb(11, 94, 105) 2px;
+
+}
+
+.story-column-right {
+    border: solid rgb(59, 129, 82) 2px;
+
+}
+
+.quality-column-left {
+    border: solid rgb(59, 129, 82) 2px;
+
+
+}
+
+.quality-column-right {
+    border: solid rgb(11, 94, 105) 2px;
+
+}
+
+.history-column-left {
+    border: solid pink 2px;
+  
+}
+
+.history-column-right {
+    border: solid blueviolet 2px;
+
+} */
