@@ -529,7 +529,16 @@ strong {
 /* /\  return to top button /\*/
 
 
+/* signature */
 
+.sig {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    font-size: 0.7rem;
+    text-decoration: none;
+    text-align: center;
+}
 
 
 
