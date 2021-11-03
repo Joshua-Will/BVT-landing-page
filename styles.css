@@ -13,7 +13,9 @@ body {
     min-width: 315px;
 }
 
-/* scroll snapping attempt */
+/* \/ scroll snapping attempt \/ */
+
+/* "body" works in Safari apparently, but not anywhere else.  "html" doesn't work in Safari, but does elsewhere */
 html, body {
     scroll-snap-type: y proximity;
 }
@@ -27,6 +29,8 @@ html, body {
     scroll-snap-align: start;
 
 }
+/* /\ scroll snapping code /\ */
+
 
 
 a {
@@ -83,8 +87,6 @@ a:visited {
 
 
 .header-background {
-
-
     position: static;
     display: block;
     overflow: visible;
@@ -133,8 +135,6 @@ a:visited {
 
 
 .sticky-nav {
-
-
     position: sticky;
     position: -webkit-sticky;
     top: 0px;
@@ -216,10 +216,10 @@ a:visited {
     text-align: center;
 }
 
+
+
+
 /* \/ Our Story Section \/ */
-
-
-
 .story-column-left {
     min-height: 100vh;
     background-image: -webkit-gradient(linear, left top, left bottom from(rgba(75, 4, 4, 0.9)));
@@ -235,7 +235,6 @@ a:visited {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 
 .story-column-right .section-title {
@@ -249,13 +248,13 @@ a:visited {
 
 
 .story-asterisk {
-    
-    color: rgba(250, 235, 215, 0.199);
+        color: rgba(250, 235, 215, 0.199);
 }
 /* /\ Our Story Section /\ */
 
-/* \/ Commitment To Quality Section \/ */
 
+
+/* \/ Commitment To Quality Section \/ */
 .quality-column-left {
     background-color: rgba(54, 3, 3, 0.64);
     min-height: 100vh;
@@ -281,8 +280,9 @@ a:visited {
     object-fit: cover;
     -o-object-fit: cover;
 }
-
 /* /\ Commitment to quality section /\ */
+
+
 
 /* \/ History of luck crickets section \/ */
 
@@ -312,11 +312,11 @@ a:visited {
     object-fit: cover;
     -o-object-fit: cover;
 }
-
 /* /\ history of luck crickets section /\ */
 
-/* \/ add to cart section \/ */
 
+
+/* \/ add to cart section \/ */
 .product-column {
 
     min-height: 100vh;
@@ -347,9 +347,6 @@ a:visited {
 
     
 }
-
-
-
 
 .item-desc, .checkout-btn, .cart-title {
     margin: 0.5rem 1rem 2rem 1rem;
@@ -404,12 +401,12 @@ background-attachment: scroll, scroll;
 object-fit: cover;
 -o-object-fit: cover;
 }
-
 /* /\ add to cart section /\ */
 
+
+
+
 /* \/ contact us \/ */
-
-
 .contact-right {
     min-height: 100vh;
     background-image: -webkit-gradient(linear, left top, left bottom from(rgba(75, 4, 4, 0.9)));
@@ -438,9 +435,7 @@ object-fit: cover;
     padding: 2rem 2rem 0rem 5rem;
     font-size: 1rem;
     line-height: 1.2;
-
 }
-
 
 strong {
     font-weight: 700;
@@ -503,12 +498,12 @@ strong {
 .send-message:hover {
     color: rgba(221, 21, 21, 0.932);
 }
-
-
 /* /\ contact us /\ */
 
-/* \/ Return to top button \/ */
 
+
+
+/* \/ Return to top button \/ */
 .to-top .fa {
     font-size: 35px;
     margin-top: 10px;
@@ -526,17 +521,11 @@ strong {
     border: none;
     border-radius: 20%;
     line-height: 15px;
-    
-}
+    }
 
 .to-top:hover {
-
     background-color: rgb(161, 1, 1);
-
-    
 }
-
-
 /* /\  return to top button /\*/
 
 
