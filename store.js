@@ -39,6 +39,9 @@ function quantityChanged(event) {
     if (isNaN(input.value)  ||  input.value <= 0) {
         input.value = 1
     }
+    if (input.value % 10 == 0) {
+        input.value = input.value + 0
+    }
     updateCartTotal()
 }
 
