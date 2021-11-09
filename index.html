@@ -76,7 +76,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Contact Us</a>
+                                    <a class="nav-link contact-link" href="#contact">Contact Us</a>
                                 </li>
                             </ul>
                             <form class="d-flex">
@@ -86,7 +86,7 @@
                         <a class="buy-now-button navbar-brand" href="#cart"><button type="button"
                                 class="btn btn-danger">Buy
                                 Now</button></a>
-                        <a class="nav-link active shopping-cart shopping-cart-logo" href="#cart">
+                        <a class="nav-link active shopping-cart shopping-cart-logo" href="#cart-checkout">
                             <p class="your-cart m-auto">Your
                                 Cart </p><img src="./images/cart-icon.png" alt="shopping cart icon"
                                 class="cart-icon m-auto" id="cart-icon">
@@ -332,12 +332,12 @@
 
 
     <!-- \/ Demo code for web shop  \/ -->
-    <div class="container-fluid cart-div scroll-home">
+    <div class="container-fluid cart-div scroll-home" id="cart">
         <section class="container cart-section">
             <h2 class="section-header">Get Your Lucky Cricket Powder Now!</h2>
             <div class="shop-items">
                 <div class="shop-item">
-                    <span class="shop-item-title">Lucky <br>Cricket<br> Powder</span>
+                    <span class="shop-item-title">Lucky Cricket Powder</span>
                     <img class="shop-item-image" src="images/0.22lb-cricket-powder.png">
                     <div class="shop-item-details">
                         <span class="shop-item-price">$32.99</span>
@@ -345,7 +345,7 @@
                     </div>
                 </div>
                 <div class="shop-item">
-                    <span class="shop-item-title">Premium<br> Lucky<br> Cricket<br> Powder</span>
+                    <span class="shop-item-title">Premium Lucky Cricket Powder</span>
                     <img class="shop-item-image" src="images/0.22lb-premium-cricket-powder.png">
                     <div class="shop-item-details">
                         <span class="shop-item-price">$72.99</span>
@@ -359,52 +359,28 @@
 
         <!-- cart -->
 
-        <section class="container cart-section cart-checkout-top">
-            <h2 class="section-header">CART</h2>
+        <section class="container cart-section cart-checkout-top" id="cart-checkout">
+            <h2 class="section-header cart-section-header">CART</h2>
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column">ITEM</span>
                 <span class="cart-price cart-header cart-column">PRICE</span>
                 <span class="cart-quantity cart-header cart-column">QUANTITY</span>
             </div>
             <div class="cart-items">
-                <div class="cart-row">
-                    <div class="cart-item cart-column">
-                        <img class="cart-item-image" src="images/cricket-powder-in-cart.png" width="100" height="100">
-                        <span class="cart-item-title">Lucky Cricket Powder</span>
-                    </div>
-                    <span class="cart-price cart-column">$32.99</span>
-                    <div class="cart-quantity cart-column">
-                        <input class="cart-quantity-input" type="number" value="1">
-                        <button class="btn btn-dark" type="button">REMOVE</button>
-                    </div>
-                </div>
-                <div class="cart-row">
-                    <div class="cart-item cart-column">
-                        <img class="cart-item-image" src="images/cricket-powder-premium-in-cart.png" width="100"
-                            height="100">
-                        <span class="cart-item-title">Premium Cricket Powder</span>
-                    </div>
-                    <span class="cart-price cart-column">$72.99</span>
-                    <div class="cart-quantity cart-column">
-                        <input class="cart-quantity-input" type="number" value="2">
-                        <button class="btn btn-dark" type="button">REMOVE</button>
-                    </div>
-                </div>
+
             </div>
             <div class="cart-total">
                 <strong class="cart-total-title">Total</strong>
-                <span class="cart-total-price">$178.97</span>
+                <span class="cart-total-price">$0.00</span>
             </div>
             <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
         </section>
 
-        <section class="cart-checkout-bottom">
-            <div class="col-xs-12"></div>
-        </section>
+
     </div>
     <!-- /\ Demo code for web shop /\ -->
 
-
+    <section class="cart-checkout-bottom"></section>
 
 
 
@@ -497,7 +473,7 @@
     <!-- \/ Signature \/ -->
 
     <a href="https://github.com/Joshua-Will/BVT-landing-page" class="sig">
-        Made with <i class="fa fa-heart"></i> by Josh
+        Made <br>with <br><i class="fa fa-heart"></i> <br>by Josh
     </a>
 
 

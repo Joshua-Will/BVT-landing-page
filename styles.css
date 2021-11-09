@@ -63,6 +63,10 @@ a:visited {
 
 }
 
+.contact-link {
+    padding-right: 2px;
+}
+
 .shopping-cart {
     font-size: 1.6rem;
 }
@@ -389,12 +393,12 @@ a:visited {
     margin-bottom: 40px;
 }
 
-/* .cart-checkout-top  {
-    /* flex-direction: row;
+.cart-checkout-top  {
+    flex-direction: row;
     justify-content: space-around;
     min-height: 20vh;
-    border-top: solid rgba(141, 4, 4, 0.582) 2px;
 }
+
 
 .cart-checkout-bottom {
 height: 80vh;
@@ -405,7 +409,7 @@ background-size: auto, cover;
 background-attachment: scroll, scroll;
 object-fit: cover;
 -o-object-fit: cover;
-} */
+}
 /* /\ add to cart section /\ */
 
 
@@ -536,14 +540,19 @@ strong {
 
 /* signature */
 
+
 .sig {
-    position: absolute;
-    bottom: 40px;
-    left: 30px;
+    position: fixed;
     font-size: 0.7rem;
-    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    left: 45px;
     text-align: center;
+    outline: none;
+    border: none;
 }
+
 
 
 
@@ -553,7 +562,7 @@ strong {
     flex-direction: column;
     align-items: center;
     color: antiquewhite;
-    min-height: 100vh;
+    min-height: 50vh;
     background-image: -webkit-gradient(linear, left top, left bottom from(rgba(133, 3, 3, 0.342)));
     background-image: linear-gradient(180deg, rgba(145, 76, 76, 0.226), rgba(59, 18, 18, 0.507));
 }
@@ -701,12 +710,16 @@ strong {
 
 .shop-item-title {
     display: block;
-    width: 100%;
+    /* setting a hard width because i need 1 word per line WITHOUT <br> tags and this combined with word-break manages that */
+    width: 120px;
+    word-break: normal;
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
     margin-bottom: 15px;
+    line-height: 32px;
+    
 }
 
 .shop-item-image {
@@ -723,6 +736,18 @@ strong {
 .shop-item-price {
     flex-grow: 1;
     color: rgb(255, 255, 255);
+    margin-right: 0.5rem;
+}
+
+.shop-item-button {
+    margin-left: 0.5rem;
+    color: black;
+    background-color: rgb(255, 166, 0);
+}
+
+.shop-item-button:hover {
+    background-color: rgb(255, 123, 0);
+
 }
 
 .shop-items {
@@ -733,7 +758,10 @@ strong {
 
 
 /* cart */
+
+
 .cart-header {
+    margin-top: 10px;
     font-weight: bold;
     font-size: 1.25rem;
     color: rgb(255, 255, 255);
@@ -778,6 +806,8 @@ strong {
     height: auto;
     border-radius: 10px;
 }
+
+
 
 .btn-danger {
     color: white;
@@ -827,15 +857,39 @@ strong {
 
 .cart-total-price {
     min-width: 100px;
-    background-color: rgb(54, 2, 2);
+    /* background-color: rgb(54, 2, 2); */
     color: rgb(255, 255, 255);
     font-size: 1.1rem;
+}
+
+.btn-dark {
+    background-color: rgb(97, 48, 8);
+}
+
+.btn-dark:hover {
+    background-color: rgb(54, 28, 6);
+
 }
 
 .btn-purchase {
     display: block;
     margin: 40px auto 80px auto;
     font-size: 1.75rem;
+    background-color: rgb(190, 18, 18);
+}
+
+.btn-purchase:hover {
+    font-size: 1.77rem;
+    background-color: rgb(252, 41, 41);
+}
+
+.btn-purchase:visited {
+    background-color: rgb(190, 18, 18);
+}
+
+.btn-purchase:link {
+    background-color: rgb(190, 18, 18);
+
 }
 
 /* /\ demo code for web shop /\ */
