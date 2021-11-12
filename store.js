@@ -5,7 +5,7 @@ if (document.readyState == 'loading') {
     ready()
 }
 
-// the function that loads the relevant cart code
+// the function that loads the inital event listeners
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName(`btn-dark`)
 
